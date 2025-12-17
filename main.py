@@ -32,5 +32,9 @@ def print_report(book_path, num_words, chars_sorted_list):
 
     print("============== END ==============")
 
-main()
+if len(sys.argv) >= 2:
+    main()
+else:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
 
